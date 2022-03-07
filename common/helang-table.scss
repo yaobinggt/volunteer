@@ -1,0 +1,176 @@
+/*
+ *  uni-app 表格样式表
+ *  作者:helang
+ *  邮箱:helang.love@qq.com
+*/
+
+.h-table{
+	/* 行 */
+	.h-tr{
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: center;
+		
+		border-color: #ccc;
+		border-style: solid;
+		border-width: 0;
+		border-top-width: 1px;
+		border-left-width: 1px;
+		border-bottom-width: 1px;
+		color: #333;
+		
+		/* 等比分列，1-6列 */
+		@for $i from 1 through 6
+		{
+			&-#{$i}{
+				>.h-td{
+					width:(100% / $i);
+				}
+			}
+		}
+		
+		+ .h-tr{
+			border-top-style: none;
+		}
+	}
+	/* 单元格 */
+	.h-td{
+		box-sizing: border-box;
+		padding: 3px;
+		word-break:break-all;
+		border-color: #ccc;
+		border-style: solid;
+		border-width: 0;
+		border-right-width: 1px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		min-height: 64rpx;
+		
+		/* 跨列 */
+		&-colspan{
+			flex-grow: 1;
+			width:0;
+		}
+		
+		&-rowspan{
+			// border: none;
+			border-right-width: 0;
+			padding: 0 !important;
+			flex-wrap: wrap !important;
+			
+			>.h-tr{
+				width: 100%;
+				border-width: 0;
+				
+				.h-td{
+					border-right-width: 1px;
+				}
+				
+				& + .h-tr{
+					border-top-width: 1px;
+					border-top-style: solid;
+				}
+			}
+		}
+		
+		/* 内容顶部对齐 */
+		&-top{
+			align-items: flex-start;
+			align-content:flex-start;
+		}
+		/* 内容底部对齐 */
+		&-bottom{
+			align-items: flex-end;
+			align-content:flex-end;
+		}
+		/* 内容左边对齐 */
+		&-left{
+			justify-content: flex-start;
+		}
+		/* 内容右边对齐 */
+		&-right{
+			justify-content: flex-end;
+		}
+	}
+	/* 表头 */
+	.h-thead{
+		background-color: #e6e6e6;
+	}
+	
+	/* 表格虚线 */
+	&-dashed{
+		.h-tr{
+			border-top-style: dashed;
+			border-left-style: dashed;
+			border-bottom-style: dashed;
+		}
+		.h-td{
+			border-right-style: dashed;
+		}
+		
+		.h-td-rowspan{
+			.h-tr + .h-tr{
+				border-top-style: dashed;
+			}
+		}
+	}
+	
+	/* 表格主题 Map，颜色摘自 Bootstrap */
+	$theme-table:(
+		primary:(
+			color:#fff,
+			bgColor:#337ab7,
+			border:#2e6da4
+		),
+		success:(
+			color:#fff,
+			bgColor:#5cb85c,
+			border:#4cae4c
+		),
+		info:(
+			color:#fff,
+			bgColor:#5bc0de,
+			border:#46b8da
+		),
+		warning:(
+			color:#fff,
+			bgColor:#f0ad4e,
+			border:#eea236
+		),
+		danger:(
+			color:#fff,
+			bgColor:#d9534f,
+			border:#d43f3a
+		)
+	);
+	
+	/* 生成主题代码 */
+	$theme-table-keys:map-keys($theme-table);
+	@each $k in $theme-table-keys {
+		$item:map-get($theme-table,$k);
+		&-#{$k}{
+			.h-tr{
+				border-top-color: map-get($item,border);
+				border-left-color: map-get($item,border);
+				border-bottom-color: map-get($item,border);
+				color: map-get($item,bgColor);
+			}
+			.h-td{
+				border-right-color: map-get($item,border);
+				
+			}
+			.h-thead{
+				background-color: map-get($item,bgColor);
+				color: map-get($item,color);
+			}
+		}
+	}
+}

@@ -1,0 +1,443 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},{
+	        "path" : "pages/tabbar/major/major",
+	        "style" :                                                                                    
+	        {
+	            "app-plus":{
+	            	"titleNView":false
+	            }
+	        }
+	    },{
+	        "path" : "pages/tabbar/school/school",
+	        "style" :                                                                                    
+	        {
+	            "app-plus":{
+	            	"titleNView":false
+	            }
+	        }
+	        
+	    },{
+	        "path" : "pages/tabbar/fill/fill",
+	        "style" :                                                                                    
+	        {
+				"navigationBarBackgroundColor":"#ffffff",
+				"navigationBarTitleText": "我的志愿方案",
+				"enablePullDownRefresh": false
+	        }
+	    },{
+	        "path" : "pages/tabbar/user/user",
+	        "style" :                                                                                    
+	        {
+				"navigationBarBackgroundColor":"#ffffff",
+	            "navigationBarTitleText": "我的",
+	            "enablePullDownRefresh": false
+	        }
+	        
+	    }
+	    ,{
+            "path" : "pages/notice/noticeList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公告",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/notice/noticeInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/schoolDetail/schoolDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "大学详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/majorDetail/majorDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "专业详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/newsDetail/newsDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/fixed/fixed",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "学校详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+				"navigationBarBackgroundColor":"#ffffff",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userVip/userVip",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "VIP",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userSuccess/userSuccess",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的成绩单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userVolunter/userVolunter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的志愿",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userCollege/userCollege",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关注院校",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userMajor/userMajor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关注专业",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userFeedback/userFeedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户反馈",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userSetting/userSetting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/ranking/ranking",
+            "style" :                                                                                    
+            {
+				"navigationBarBackgroundColor":"#ffffff",
+                "navigationBarTitleText": "大学排名",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/competeSort/competeSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "竞争力排名",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/salarySort/salarySort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "大学薪酬排名",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/ruankeSort/ruankeSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "软科排名",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/alumniSort/alumniSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "校友会得分排名",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/usSort/usSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "U.S.News排行榜",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/twsSort/twsSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "泰晤士得分排行",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/qsSort/qsSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "QS世界大学排行",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/ranking/wushuSort/wushuSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "武书连得分排行",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/ranking/majorSort/majorSort",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "专业薪酬排行",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/phase/phase",
+            "style" :                                                                                    
+            {
+				"navigationBarBackgroundColor":"#2499FF",
+				"navigationBarTextStyle":"white",
+                "navigationBarTitleText": "志愿模拟填报",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/login/binding",
+            // "style" :                                                                                    
+            // {
+            //     "navigationBarTitleText": "完善个人信息",
+            //     "enablePullDownRefresh": false
+            // }
+			"style": 
+			{
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+        }
+        ,{
+            "path" : "pages/recommend/recommend",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "志愿选择",
+                "enablePullDownRefresh": false
+            }
+        }
+        
+        ,{
+            "path" : "pages/stage/stage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/testSelect/testSelect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/voluntaryInfo/voluntaryInfo",
+            "style":
+            {
+            	"navigationStyle": "custom" ,// 隐藏系统导航栏
+            	"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/bindVip/bindVip",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "绑定会员卡号",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "学校搜索",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/searchMajor/searchMajor",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "专业搜索",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/payEnd/payEnd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "支付",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/bindVip/bindVipOK",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "VIP绑定成功",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userSetting/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userSetting/agreement",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户协议",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userSetting/disclaimer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "免责声明",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userSetting/privacy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "隐私声明",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar":{
+		"color":"#cdcdcd",
+		"selectedColor":"#2499ff",
+		"borderStyle":"black",
+		"list":[
+			{
+				"iconPath":"/static/tabbar/home.png",
+				"pagePath":"pages/tabbar/index/index",
+				"selectedIconPath":"static/tabbar/home-on.png",
+				"text":"首页"
+			},
+			{
+				"iconPath":"/static/tabbar/school.png",
+				"pagePath":"pages/tabbar/school/school",
+				"selectedIconPath":"static/tabbar/school-on.png",
+				"text":"院校库"
+			},
+			{
+				"iconPath":"/static/tabbar/fill.png",
+				"pagePath":"pages/tabbar/fill/fill",
+				"selectedIconPath":"static/tabbar/fill-on.png",
+				"text":"志愿方案"
+			},
+			{
+				"iconPath":"/static/tabbar/major.png",
+				"pagePath":"pages/tabbar/major/major",
+				"selectedIconPath":"static/tabbar/major-on.png",
+				"text":"专业库"
+			},
+			{
+				"iconPath":"/static/tabbar/user.png",
+				"pagePath":"pages/tabbar/user/user",
+				"selectedIconPath":"static/tabbar/user-on.png",
+				"text":"个人中心"
+			}
+		]
+	}
+}
